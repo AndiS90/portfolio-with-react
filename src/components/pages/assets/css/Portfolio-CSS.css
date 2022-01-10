@@ -1,0 +1,308 @@
+/*Start Globals Styles*/
+:root {
+    --mainBackground: #062e18;
+    --mainFont: #ebb1d1;
+    --innerPageWidth: 85%;
+    --fontBackground: rgb(245, 235, 219);
+    --border-radius: 0.3rem;
+}
+
+::selection {
+    background-color: rgb(245, 235, 219) !important;
+    color: rgb(216, 95, 186) !important;
+}
+
+html {
+    font-size: .75em;
+    
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--mainBackground);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: .5em;
+    margin-left: 1em;
+    font-size: 4em;
+    line-height: 1.25;
+    color: var(--mainFont);
+
+}
+
+
+h2 {
+    padding-top: 1rem;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    margin-left: 1em;
+    font-size: 3em;
+    color: var(--mainFont);
+}
+
+h3 {
+
+    font-size: 3em;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.5em;
+    color: rgb(255, 214, 253);
+    padding-top: 1em;
+    padding-bottom: 4em;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+}
+
+section {
+    background-color: var(--mainBackground);
+    background-size: cover;
+    width: var(--innerPageWidth);
+    margin-left: 8em;
+    margin-right: 15em;
+}
+
+/*End Global Styles*/
+
+/*Start Header Styles*/
+header {
+    background-color: var(--mainBackground);
+    width: var(--innerPageWidth);
+    margin-top: 2em;
+    margin-left: 8em;
+}
+
+.Andi {
+    font-size: 1.1em;
+    color: rgb(255, 214, 253);
+}
+
+nav ul {
+    width: var(--innerPageWidth);
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    margin-right: .5em;
+    margin-left: 4em;
+
+}
+
+nav li {
+    flex: .1 0 2em;
+    font-size: 1.75em;
+    list-style: none;
+    text-align: center;
+
+}
+
+nav ul li a {
+    color: var(--mainFont) !important;
+
+}
+
+/*End Header Styles*/
+
+/*Start Banner Styles*/
+.banner {
+    height: fill;
+    width: var(--innerPageWidth);
+    background-position: center;
+    background-size: cover;
+    background-color: var(--mainBackground);
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-left: 8em;
+}
+
+/*End Banner*/
+
+
+/* main classes syles start*/
+/*AboutMe styles*/
+.AboutMe img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+
+}
+
+/*End AboutMe styles*/
+
+/*Work Styles*/
+
+
+
+.Work {
+    margin-top: 1em;
+    padding-bottom: 4em;
+    margin-left: 8em;
+    margin-bottom: 1em;
+    margin-right: 8em;
+    width: var(--innerPageWidth);
+    height:75%;
+    /* display:flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+
+/* .carousel-container { width:640px; height:360px; } */
+
+.carousel .item {
+    height: 150px;
+}
+
+
+
+
+
+
+/*Start ContactMe Styles */
+.ContactMe {
+    width: var(--innerPageWidth);
+    margin-top: 1em;
+    margin-bottom: 0em;
+    margin-right: 8em;
+    margin-left: 8em;
+
+
+}
+
+.ContactMe ul {
+  
+    font-size: 1.75em;
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: flex-end; */
+    align-items: center;
+
+}
+
+.ContactMe li {
+    /* flex: 2em 0 1em; */
+    justify-content: flex-end;
+    list-style: none;
+    margin-left: 4em;
+    padding-bottom: 2em;
+    color: var(--mainFont);
+  
+
+}
+
+.ContactMe li a i {
+
+    color: var(--mainFont) !important;
+}
+
+
+.form {
+    width: var(--innerPageWidth);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 8em;
+    margin-left: 6em;
+    padding: 2em;
+    color: var(--mainBackground);
+    background-color:rgb(245, 235, 219);
+    border: 3px solid rgb(255, 214, 253);
+    border-radius: var(--border-radius);
+    border-style: double;
+    border-width: thick;
+    font-size: 1.25em;
+  }
+
+  .form label {
+    margin-left: em;
+
+  }
+  
+  .form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .form .button {      
+      padding: 20px;
+  }
+
+/*Start ContactMe Styles */
+/*main classes end*/
+
+/*Start Pseduo Element Styles*/
+/* The user is hovering over the element */
+a:hover {
+    background-color: #845955;
+    color: #9c8c8c;
+
+}
+
+/* The user is actively pressing down on the element */
+a:active {
+    font-size: 85%;
+    box-shadow: 0 0 10px #000 inset;
+}
+
+/* The element is currently in focus, either by tabbing to or clicking on it */
+a:focus {
+    outline: none;
+    border-color: #845955;
+}
+
+/*Start Pseduo Element Styles*/
+
+
+
+.modal-title {
+
+    font-size: 1.75em;
+
+}
+
+.modal-body {
+    font-size: 1.5em;
+
+
+
+}
+
+.modal img {
+
+    margin-left: 2em;
+}
+
+.modal ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+
+}
+
+/* .carousel-container {
+    justify-content: center;
+    margin-left: 4em;
+    margin-right: 4em;
+} */
