@@ -6,17 +6,21 @@ import project2 from './assets/images/project-2.jpg';
 import project3 from './assets/images/project-3.jpg';
 import project4 from './assets/images/project-4.jpg';
 import project5 from './assets/images/project-5.jpg';
+import project6 from './assets/images/project-6.jpg';
 import sc1 from './assets/images/screenshot1.gif';
 import sc2 from './assets/images/screenshot2.gif';
 import sc3 from './assets/images/tech-blog-acnh-screenshot.gif';
+import sc4 from './assets/images/note-taker-screenshot.png';
+import sc5 from './assets/images/scheduling-screenshot.png';
 
 export default function Projects() {
 
 const [lgShow1, setLgShow1] = useState(false);
 const [lgShow2, setLgShow2] = useState(false);
 const [lgShow3, setLgShow3] = useState(false);
-
-
+const [lgShow4, setLgShow4] = useState(false);
+const [lgShow5, setLgShow5] = useState(false);
+const [lgShow6, setLgShow6] = useState(false);
   return (
    
 <section id="Work" class="Work">
@@ -45,6 +49,30 @@ const [lgShow3, setLgShow3] = useState(false);
       <img class="cimage"  className="d-block w-100" src={project5} alt="cluttered books on table"/>
       <Carousel.Caption>
             <h3>Javascript Quiz</h3>
+           
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={2500} onClick={() => setLgShow4(true)}>
+      <img class="cimage"  className="d-block w-100" src={project3} alt="mug on book"/>
+      <Carousel.Caption>
+            <h3>Note-Taker</h3>
+           
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={2500} onClick={() => setLgShow5(true)}>
+      <img class="cimage"  className="d-block w-100" src={project4} alt="marble bust"/>
+      <Carousel.Caption>
+            <h3>Scheduling App</h3>
+           
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item interval={2500} onClick={() => setLgShow6(true)}>
+      <img class="cimage"  className="d-block w-100" src={project6} alt=""/>
+      <Carousel.Caption>
+            <h3>README Generator</h3>
            
           </Carousel.Caption>
         </Carousel.Item>
@@ -97,7 +125,7 @@ const [lgShow3, setLgShow3] = useState(false);
 </Modal.Header>
 <Modal.Body>
 
-<img src={sc2} class="screenshotGIF" alt="screenshot gif"/>
+<img src={sc2} class="screenshotGIF" alt="screenshot"/>
 <p>A basic front end javascript quiz for practicing technical questions, whilst strengthening html, 
   css, and javascript with local storage capabilities.</p>
           <ul>
@@ -108,6 +136,64 @@ const [lgShow3, setLgShow3] = useState(false);
 </Modal.Body>
 </Modal>
 
+<Modal size="lg" show={lgShow4} onHide={() => setLgShow4(false)} aria-labelledby="example-modal-sizes-title-lg">
+<Modal.Header closeButton>
+  <Modal.Title id="example-modal-sizes-title-lg">
+    Note-Taker
+  </Modal.Title>
+ 
+</Modal.Header>
+<Modal.Body>
+
+<img src={sc4} class="screenshotGIF" alt="screenshot gif"/>
+<p>An application that can be used to write and save notes involving an express.js backend which saves and retrieves note data from a JSON file
+Writing this code required a fundamental knowledge of Node.js, the file system module, and Express.js</p>
+          <ul>
+            <li> <a href="https://github.com/AndiS90/Note-Taker" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
+            <li> <a href="https://shielded-shelf-65590.herokuapp.com/" target="_blank" rel="noreferrer">Live Page</a> </li>
+          </ul>
+
+</Modal.Body>
+</Modal>
+
+<Modal size="lg" show={lgShow5} onHide={() => setLgShow5(false)} aria-labelledby="example-modal-sizes-title-lg">
+<Modal.Header closeButton>
+  <Modal.Title id="example-modal-sizes-title-lg">
+    Scheduling App
+  </Modal.Title>
+ 
+</Modal.Header>
+<Modal.Body>
+
+<img src={sc5} class="screenshotGIF" alt="screenshot gif"/>
+<p>A simple day planner that presents the current date with a functioning clock. Each hour long block is color coded depending on the present hour. 
+  User's events are stored in local storage, while Moment.js is used for presenting time.</p>
+          <ul>
+            <li> <a href="https://github.com/AndiS90/Work-Day-Scheduler" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
+            <li> <a href="https://andis90.github.io/Work-Day-Scheduler/" target="_blank" rel="noreferrer">Live Page</a> </li>
+          </ul>
+
+</Modal.Body>
+</Modal>
+
+<Modal size="lg" show={lgShow6} onHide={() => setLgShow6(false)} aria-labelledby="example-modal-sizes-title-lg">
+<Modal.Header closeButton>
+  <Modal.Title id="example-modal-sizes-title-lg">
+    README Generator
+  </Modal.Title>
+ 
+</Modal.Header>
+<Modal.Body>
+
+{/* <img src={} class="screenshotGIF" alt="screenshot gif"/> */}
+<p>Creates README file based off user input through command line. This code required a core understanding of Node.js, the file system module, and the Inquirer Package.</p>
+          <ul>
+            <li> <a href="https://github.com/AndiS90/README-Generator" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
+            <li> <a href="https://www.youtube.com/watch?v=OIHmMYze404" target="_blank" rel="noreferrer">Tutorial Video</a> </li>
+          </ul>
+
+</Modal.Body>
+</Modal>
 
 
    </section>
