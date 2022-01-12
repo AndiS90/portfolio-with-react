@@ -44,7 +44,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       <li className=""> 
-        <a href="./assets/Resume 2020.pdf" download="Resume">Resume</a>
+        <a href="./assets/Resume 2020.pdf" download="Resume"  className={'nav-link'}>Resume</a>
       </li>
     </ul>
     </nav>
