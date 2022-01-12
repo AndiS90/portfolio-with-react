@@ -99,7 +99,6 @@ SOFTWARE.
   
 No Testing
 
- ![glados](./src/components/pages/assets/images/glados.png)
 
   <br>
   
