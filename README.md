@@ -24,7 +24,7 @@
   <br>
 
 
-  - Click [here](https://nodejs.org/en/download/).
+  - Click [here](https://andis90.github.io/portfolio-with-react/#projects/).
 
 
  
@@ -35,7 +35,7 @@
 
 Navigate the links at the top of the portfolio page to discover more.
 
-![generated html screenshot](./assets/images/screenshot.png) 
+![generated html screenshot](./src/assets/images/screenshot.png) 
   
   <br>  
   
@@ -99,7 +99,7 @@ SOFTWARE.
   
 No Testing
 
- ![glados](./components/pages/assets/images/glados.png)
+ ![glados](./src/components/pages/assets/images/glados.png)
 
   <br>
   

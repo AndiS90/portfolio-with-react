@@ -98,7 +98,8 @@ const [lgShow3, setLgShow3] = useState(false);
 <Modal.Body>
 
 <img src={sc2} class="screenshotGIF" alt="screenshot gif"/>
-<p>A basic front end javascript quiz for practicing technical questions, whilst strengthening html, css, and javascript with local storage capabilities.</p>
+<p>A basic front end javascript quiz for practicing technical questions, whilst strengthening html, 
+  css, and javascript with local storage capabilities.</p>
           <ul>
             <li> <a href="https://github.com/AndiS90/Javascript-Quiz" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
             <li> <a href="https://andis90.github.io/Javascript-Quiz/" target="_blank" rel="noreferrer">Live Page</a> </li>
