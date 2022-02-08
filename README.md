@@ -24,7 +24,7 @@
   <br>
 
 
-  - Click [here](https://andis90.github.io/portfolio-with-react/#projects/).
+  - Click [here](https://react-portfolio-1990.herokuapp.com/).
 
 
  
