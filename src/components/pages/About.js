@@ -17,8 +17,8 @@ export default function About() {
     <div>
     <img class='selfie' src={selfie}  />
     <p>
-      Salutations, my name is Andrea Strickland and I'm thoroughly enjoying my ongoing
-      education in web development through SMU's accredited Full-Stack Bootcamp. 
+      Salutations, I'm Andrea Strickland and I'm thoroughly enjoying my ongoing
+      education in web development, I just received certification from -SMU's accredited Full-Stack Bootcamp. 
       Prior to 2020 I spent 6 years as a pricing-analyst at a ticket brokerage company. 
       From 2009 to 2012 I attended UT Dallas majoring in mathematics
       minoring in UTeach. Before that I was a small town Valedictorian in Leonard, TX.  My passions include
