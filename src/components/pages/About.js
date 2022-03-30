@@ -14,11 +14,11 @@ export default function About() {
 
 
     <h2>About Me</h2>
-    <div>
-    <img class='selfie' src={selfie}  />
+    <div class="intro">
+    <img class='selfie' src={selfie} alt="devastatingly handsome woman" />
     <p>
       Salutations, I'm Andrea Strickland and I'm thoroughly enjoying my ongoing
-      education in web development, I just received certification from -SMU's accredited Full-Stack Bootcamp. 
+      education in web development, I just received certification from SMU's accredited Full-Stack Bootcamp. 
       Prior to 2020 I spent 6 years as a pricing-analyst at a ticket brokerage company. 
       From 2009 to 2012 I attended UT Dallas majoring in mathematics
       minoring in UTeach. Before that I was a small town Valedictorian in Leonard, TX.  My passions include
@@ -33,19 +33,35 @@ export default function About() {
     <div class= "galleryWrapper">
       <div class = "gallery">
         <div class="clipped-border">
-      <img src={js} id="clipped"/>
+          
+      <img src={js} id="clipped" alt="javascript icon"/> 
+      <div class="centered">
+        <span>Javascript</span>
+      </div>
         </div>
         <div class="clipped-border">
-      <img src={mysql} id="clipped"/>
+      <img src={mysql} id="clipped" alt="mySQL icon"/>
+      <div class="centered">
+        <span>MySQL</span>
+      </div>
         </div>
       <div class="clipped-border">
-    <img src={node} id="clipped"/>
+    <img src={node} id="clipped" alt="node icon"/>
+    <div class="centered">
+        <span>Node</span>
+      </div>
       </div>
       <div class="clipped-border">
-    <img src={handelbar} id="clipped"/>
+    <img src={handelbar} id="clipped" alt="handlebar icon"/>
+    <div class="centered">
+        <span>Handlebar</span>
+      </div>
       </div>
     <div class="clipped-border">
-    <img src={react} id="clipped"/>
+    <img src={react} id="clipped" alt="react icon"/>
+    <div class="centered">
+        <span>React</span>
+      </div>
     </div>
     <div class = "shadow"></div>
     
