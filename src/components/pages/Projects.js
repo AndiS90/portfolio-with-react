@@ -28,10 +28,13 @@ const [lgShow6, setLgShow6] = useState(false);
 
       <Carousel class="carousel-container">
 
-        <Carousel.Item  interval={2500} onClick={() => setLgShow1(true)}>
-      <img class="cimage" className="d-block w-100" src={project1} alt="computer against skyline" />
+        <Carousel.Item  interval={250000} onClick={() => setLgShow1(true)}>
+      <img class="cimage" className=" " src={project1} alt="computer against skyline" />
+      
       <Carousel.Caption>
-            <h3>Weather Dashboard</h3>
+        <div class="caption">
+           <h3>Weather Dashboard</h3>
+        </div>
      
           </Carousel.Caption>
         </Carousel.Item>

@@ -1,4 +1,5 @@
 import React from 'react';
+import underline from './pages/assets/images/underline.png';
 
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
@@ -6,7 +7,11 @@ import React from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header>
-    <h1>Strickland, Andrea <span class="Andi">(Andi)</span></h1>
+      <div>
+    <h1>Strickland, Andrea <span class="Andi">(Andi)</span>
+    {/* <img class='underline' src={underline} alt="gold ornate underline decoration" /> */}
+    </h1>
+    </div>
     <nav>
     <ul className=" ">
       {/* <li className="" >

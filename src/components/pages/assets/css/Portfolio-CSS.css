@@ -44,9 +44,10 @@ body {
 
 h1 {
     font: zilla slab light 300;
+    padding-top: 1.35rem;
     margin-top: .5em;
-    margin-left: 1em;
-    font-size: 4em;
+    margin-left: .75em;
+    font-size: 4.25em;
     font-weight: light;
     line-height: 1.25;
     color: var(--mainFont);
@@ -54,13 +55,15 @@ h1 {
 }
 
 
+
+
 h2 {
     margin-right: .5em;
     padding-top: 1.75rem;
-    padding-bottom: .5em;
+    padding-bottom: .75em;
     padding-left: .5em;
-    margin-left: 1em;
-    font-size: 3.5em;
+    margin-left: 0em;
+    font-size: 3.75em;
     color: var(--mainFont);
 }
 
@@ -72,7 +75,7 @@ h3 {
 p {
     margin-bottom: 1em;
     margin-right: 50px;
-    font-size: 1.75em;
+    font-size: 2.0em;
     color: rgb(251, 248, 241);
     padding-top: 1em;
     padding-bottom: 2em;
@@ -117,14 +120,14 @@ nav ul {
     flex-flow: row wrap;
     margin-top: 1em;
     margin-bottom: 1.5em;
-    margin-right: .5em;
-    margin-left: 4em;
+    margin-right: 0em;
+    margin-left: 7em;
 
 }
 
 nav li {
     flex: .1 0 2em;
-    font-size: 1.75em;
+    font-size: 2em;
     list-style: none;
     text-align: center;
 
@@ -146,22 +149,33 @@ nav ul li a {
 /*AboutMe styles*/
 .AboutMe .selfie {
     float: left;
-    width: 150px;
-    height: 150px;   
-    margin-top: 25px;
-    margin-right: 15px;
+    width: 200px;
+    height: 200px;   
+    margin-top: 55px;
+    margin-right: 25px;
 }
 
 .intro{
-  margin-left: 50px;
+  margin-left: 7rem;
+  margin-top: 40px;
+  margin-right: 6rem;
 }
 
 .AboutMe {
-
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   overflow: scroll;
 }
 
-
+.underline{
+  background: transparent;
+  width:90vw;
+  max-height: 80vh;
+  margin-top:-22%;
+  margin-bottom: -22%;
+  margin-left:0rem;
+}
 
 /*End AboutMe styles*/
 
@@ -189,6 +203,11 @@ nav ul li a {
     height: 60vh;
 }
 
+
+.caption{
+
+  background-color:transparent;
+}
 
 
 /*Start ContactMe Styles */
@@ -355,7 +374,7 @@ a:focus {
     .shadow{
     position: relative;
     margin-top: -120px;
-    margin-left: -125px;
+    margin-left: -120px;
     top: 250px;
     left: 100px;
     width: 500px;
@@ -446,6 +465,30 @@ a:focus {
         opacity: 1;
       }
 
+@media screen and (max-width: 1150px){
+
+  .underline{
+    margin-top: -25%;
+    margin-bottom: -25%;
+  }
+
+  .galleryWrapper{
+
+    margin-left: -15%;
+  }
+
+}
+
+@media screen and (max-width: 1050px){
+
+  .underline{
+    margin-top: -30%;
+    margin-bottom: -30%;
+  }
+
+}
+
+
 @media screen and (max-width:900px){
 
   header{
@@ -456,6 +499,11 @@ a:focus {
   .AboutMe{
 
     margin-left: 2em;
+  }
+
+  .underline{
+    margin-top: -35%;
+    margin-bottom: -35%;
   }
 
   .Work{
@@ -478,7 +526,7 @@ a:focus {
 
     display: flex;
     justify-content: flex-start;
-    margin-left: 8rem;
+    margin-left: 0rem;
     margin-right: 10rem;
   }
 
@@ -496,9 +544,49 @@ a:focus {
 
     display: flex;
     justify-content: flex-start;
-    margin-left: 4rem;
+    margin-left: -6rem;
     margin-right: 10rem;
   }
+  
+  .underline{
+
+    margin-top: -45%;
+    margin-bottom: -45%;
+  }
+
+}
+
+
+@media screen and (max-width: 630px) {
+
+  .underline{
+
+    margin-top: -50%;
+    margin-bottom: -50%;
+
+  }
+
+  .intro{  
+    display: block;
+    
+  }
+
+  p{
+
+    margin-right: 15px;
+  }
+
+  
+
+  .AboutMe .selfie {
+   display: block;
+    width: 250px;
+    height: 250px;   
+    margin-top: 15px;
+   margin-left: 60px;
+   margin-right: auto;
+    margin-bottom: 25px;
+}
 
 }
 
@@ -529,6 +617,11 @@ a:focus {
       margin-bottom: 1.5em;
       margin-left:1.5em;
      max-height: 62vh;
+    }
+
+    .AboutMe .selfie{
+
+      margin-left: 45px;
     }
 
     .ContactMe {
@@ -705,6 +798,29 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
    max-height: 62vh;
   }
 
+  .AboutMe .selfie {
+   
+    width: 200px;
+    height: 200px;   
+    margin-top: -5px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-right: -5%;
+}
+
+  .underline{
+    background: transparent;
+    width:90vw;
+    max-height: 80vh;
+    margin-top:-55%;
+    margin-bottom: -85%;
+    margin-left:0rem;
+  }
+
   .ContactMe {
       width: 90%;
       margin-top:1.5em;
@@ -766,11 +882,9 @@ clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 /*  */
 
 .galleryWrapper{
+padding-left: 45px;
+max-width: 175px; 
 
-/* display: flex;
-flex-direction: column;
-justify-content: center;
-align-items:center; */
 }
 
 .gallery{
@@ -794,7 +908,7 @@ width: 400px;
 height: 40px;
 border-radius: 50%;
 background: radial-gradient(#805d78,rgba(0,0,0,0) 70%);
-margin-top: 80px;
+margin-top: 40px;
 }
 
 img{
@@ -809,8 +923,8 @@ height:var(--height);
  background:linear-gradient(grey,lightgrey);
  width:var(--border-width);
  height:var(--border-height);
- max-height:150px;
- max-width:150px;
+ max-height:115px;
+ max-width:115px;
  height: var(--height);
  width:var(--width);
  transition:transform 0.2s;
@@ -840,7 +954,7 @@ transition:transform 0.5s;
 }
 
 .clipped-border:nth-child(2){
-top:120px;
+top:100px;
 left:55px;
 }
 
@@ -850,7 +964,7 @@ left:110px;
 }
 
 .clipped-border:nth-child(4){
-top:120px;
+top:100px;
 left:165px;
 }
 
@@ -872,3 +986,142 @@ z-index:10;
 }
 
 }
+
+
+
+@media screen and (max-width: 300px) {
+
+  header{
+
+    width: 90%;
+  }
+
+  h1{
+    margin-left: 15px;
+    font-size: 3em;
+  }
+
+  nav{
+    margin-left: -15px;
+    font-size: .75em;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    }
+
+  nav ul {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+
+    .galleryWrapper{
+      padding-left: 65px;
+     
+      
+      }
+      
+      .gallery{
+      position:relative;
+      height:30vh;
+      width:30vw;
+      display: block;
+      margin-left: -.5em;
+      margin-right: 16em;
+      }
+      
+      .gallery:after{
+      content:'';
+      }
+      
+      .shadow{
+      position: relative;
+      top: 200px;
+      left: 100px;
+      width: 400px;
+      height: 40px;
+      border-radius: 50%;
+      background: radial-gradient(#805d78,rgba(0,0,0,0) 70%);
+      margin-top: 40px;
+      }
+      
+      img{
+      width:var(--width);
+      height:var(--height);
+      }
+
+      .centered{
+
+        font-size: 1.25em;
+      }
+      
+      .clipped-border{
+      -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+       clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+       padding:5px;
+       background:linear-gradient(grey,lightgrey);
+       width:var(--border-width);
+       height:var(--border-height);
+       max-height:100px;
+       max-width:100px;
+       height: var(--height);
+       width:var(--width);
+       transition:transform 0.2s;
+       position:absolute;
+       cursor:pointer;
+      }
+      
+      
+      
+      .clipped-border:before{
+      content:'';
+      position:absolute;
+      opacity:0.5;
+      width:350px;
+      height:70px;
+      background:white;
+      top:0;
+      left:0;
+      z-index:1;
+      transform:rotate(45deg);
+      transition:transform 0.5s;
+      }
+      
+      .clipped-border:hover:before{
+      transform: translate(-100px,400%) rotate(45deg);
+      transition:transform 0.5s;
+      }
+      
+      .clipped-border:nth-child(2){
+      top:80px;
+      left:40px;
+      }
+      
+      .clipped-border:nth-child(3){
+      top:0;
+      left:80px;
+      }
+      
+      .clipped-border:nth-child(4){
+      top:80px;
+      left:120px;
+      }
+      
+      .clipped-border:nth-child(5){
+      top:0;
+      left:160px;
+      }
+      
+      #clipped {
+      -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+      clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+      
+      }
+      
+      .clipped-border:hover{
+      transform:scale(1.2);
+      transition:transform 0.2s;
+      z-index:10;
+      }
+
+ }

@@ -6,6 +6,7 @@ import gql from './assets/images/icons-graphql-96.png'
 import mysql from './assets/images/icons-mysql-96.png'
 import node from './assets/images/icons-node-js-96.png'
 import react from './assets/images/icons-react-100.png'
+import underline from './assets/images/underline.png';
 
 export default function About() {
   return (
@@ -14,11 +15,12 @@ export default function About() {
 
 
     <h2>About Me</h2>
+    <img class='underline' src={underline} alt="gold ornate underline decoration" />
     <div class="intro">
     <img class='selfie' src={selfie} alt="devastatingly handsome woman" />
     <p>
-      Salutations, I'm Andrea Strickland and I'm thoroughly enjoying my ongoing
-      education in web development, I just received certification from SMU's accredited Full-Stack Bootcamp. 
+      Salutations, I'm Andrea Strickland and having just received certification from SMU's accredited Full-Stack Bootcamp, 
+      I'm thrilled to announce my grand beginnings in web development. 
       Prior to 2020 I spent 6 years as a pricing-analyst at a ticket brokerage company. 
       From 2009 to 2012 I attended UT Dallas majoring in mathematics
       minoring in UTeach. Before that I was a small town Valedictorian in Leonard, TX.  My passions include
@@ -54,7 +56,7 @@ export default function About() {
       <div class="clipped-border">
     <img src={handelbar} id="clipped" alt="handlebar icon"/>
     <div class="centered">
-        <span>Handlebar</span>
+        <span>Handlebars</span>
       </div>
       </div>
     <div class="clipped-border">

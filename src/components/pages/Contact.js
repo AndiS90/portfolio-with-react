@@ -69,11 +69,7 @@ function Contact() {
 
       </form>
       
-      {/* {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )} */}
+
     </div>
   );
 }
