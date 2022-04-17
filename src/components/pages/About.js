@@ -34,9 +34,9 @@ export default function About() {
 
     <div class= "galleryWrapper">
       <div class = "gallery">
-        <div class="clipped-border">
-          
-      <img src={js} id="clipped" alt="javascript icon"/> 
+        
+      <div class="clipped-border">
+          <img src={js} id="clipped" alt="javascript icon"/> 
       <div class="centered">
         <span>Javascript</span>
       </div>

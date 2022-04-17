@@ -77,7 +77,7 @@ p {
     margin-right: 50px;
     font-size: 2.0em;
     color: rgb(251, 248, 241);
-    padding-top: 1em;
+    padding-top: 0em;
     padding-bottom: 2em;
 }
 
@@ -148,18 +148,29 @@ nav ul li a {
 /* main classes syles start*/
 /*AboutMe styles*/
 .AboutMe .selfie {
-    float: left;
-    width: 200px;
-    height: 200px;   
+    /* float: left;
+      
     margin-top: 55px;
-    margin-right: 25px;
+    margin-right: 25px; */
+    --b: 10px; /* control the size */
+    padding: var(--b);
+    border: calc(2*var(--b)) solid rgba(100, 82, 82, 0);
+    outline: 1px solid #ebb1d1;
+    outline-offset: calc(-1*var(--b));
+    background: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#ebb1d1 0);
+    width: 225px;
+    height: 225px;
+    float: left;
+    margin-right: 15px;
 }
+
 
 .intro{
   margin-left: 7rem;
   margin-top: 40px;
   margin-right: 6rem;
 }
+
 
 .AboutMe {
   display: flex;
@@ -365,6 +376,7 @@ a:focus {
   
 .galleryWrapper{
   display: flex;
+  flex-flow: column-wrap;
   justify-content: center;
   
 }
@@ -374,7 +386,7 @@ a:focus {
     .shadow{
     position: relative;
     margin-top: -120px;
-    margin-left: -120px;
+    margin-left: -80px;
     top: 250px;
     left: 100px;
     width: 500px;
@@ -429,6 +441,10 @@ a:focus {
        
       }
 
+      .clipped-border{
+        margin-left: 50px;
+      }
+
       .clipped-border:nth-child(2){
       top:125px;
       left:75px;
@@ -474,7 +490,7 @@ a:focus {
 
   .galleryWrapper{
 
-    margin-left: -15%;
+    margin-left: -25%;
   }
 
 }
@@ -522,13 +538,6 @@ a:focus {
 
   
 
-  .galleryWrapper{
-
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0rem;
-    margin-right: 10rem;
-  }
 
   
  /* .shadow{
@@ -544,7 +553,7 @@ a:focus {
 
     display: flex;
     justify-content: flex-start;
-    margin-left: -6rem;
+    margin-left: -10rem;
     margin-right: 10rem;
   }
   
