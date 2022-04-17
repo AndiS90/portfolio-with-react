@@ -563,6 +563,24 @@ a:focus {
     margin-bottom: -45%;
   }
 
+  p{
+
+    margin-left:-15px;
+    margin-right: -15px;
+  }
+
+}
+
+
+/* where first word becomes longer than section and drops to column below selfie */
+@media screen and (max-width: 670px){
+
+  .AboutMe{
+    display: flex;
+    flex-flow: column-wrap;
+    justify-content:center;
+  }
+
 }
 
 
