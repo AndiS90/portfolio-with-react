@@ -1,6 +1,8 @@
 import React , { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from 'react-bootstrap/Modal';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import project1 from  './assets/images/project-1.jpg';
 import project2 from './assets/images/project-2.jpg';
 import project3 from './assets/images/project-3.jpg';
@@ -90,10 +92,14 @@ const [lgShow6, setLgShow6] = useState(false);
   </Modal.Title>
 </Modal.Header>
 <Modal.Body>  
-          <img src={sc1} class="screenshotGIF" alt="screenshot gif" />
-          <p>Enter a city name and get a five day forecast including the current day's uv index in a warning color if necessary. 
+      <Row>
+        
+          <Col xs={12} ><img src={sc1} class="screenshotGIF" alt="screenshot gif" /></Col>
+          <Col xs={12}> <p> &emsp;Enter a city name and get a five day forecast including the current day's uv index in a warning color if necessary. 
             Through multiple api calls using jquery's ajax, data is pulled from the open weather api and thus manipulated through 
-            a series of functions and a loop with conditionals.</p>
+            a series of functions and a loop with conditionals.
+          </p></Col>
+      </Row>
           <ul>
             <li> <a href="https://github.com/AndiS90/Weather-Dashboard" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
             <li> <a href="https://andis90.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">Live Page</a> </li>
@@ -108,12 +114,13 @@ const [lgShow6, setLgShow6] = useState(false);
   </Modal.Title>
 </Modal.Header>
 <Modal.Body>      
-  <img src={sc3} class="screenshotGIF" alt="screenshot gif"/>
-  <p>A Blog Application created with the express-handlebars package implemented for views, 
+<Col xs={12} ><img src={sc3} class="screenshotGIF" alt="screenshot gif"/></Col>
+<Col xs={12} > <p> &emsp;A Blog Application created with the express-handlebars package implemented for views, 
     the mySQL2 and Sequelize packages to connect to a MYSQL database for MODELS, 
     and and Express.js API for Controllers. The dotenv package is used for environment variables, 
     the bcrypt package to hash passwords, and the express-session, and connect-session-sequelize packages to add authentication.</p>
-          <ul>
+  </Col>       
+         <ul>
             <li> <a href="https://github.com/AndiS90/Tech-Blog" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
             <li> <a href="https://polar-savannah-37169.herokuapp.com/" target="_blank" rel="noreferrer">Live Page</a> </li>
           </ul></Modal.Body>
@@ -128,9 +135,9 @@ const [lgShow6, setLgShow6] = useState(false);
 </Modal.Header>
 <Modal.Body>
 
-<img src={sc2} class="screenshotGIF" alt="screenshot"/>
-<p>A basic front end javascript quiz for practicing technical questions, whilst strengthening html, 
-  css, and javascript with local storage capabilities.</p>
+<Col xs={12} ><img src={sc2} class="screenshotGIF" alt="screenshot"/></Col>
+<Col xs={12} ><p> &emsp; A basic front end javascript quiz for practicing technical questions, whilst strengthening html, 
+  css, and javascript with local storage capabilities.</p></Col>
           <ul>
             <li> <a href="https://github.com/AndiS90/Javascript-Quiz" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
             <li> <a href="https://andis90.github.io/Javascript-Quiz/" target="_blank" rel="noreferrer">Live Page</a> </li>
@@ -148,9 +155,10 @@ const [lgShow6, setLgShow6] = useState(false);
 </Modal.Header>
 <Modal.Body>
 
-<img src={sc4} class="screenshotGIF" alt="screenshot gif"/>
-<p>An application that can be used to write and save notes involving an express.js backend which saves and retrieves note data from a JSON file
+<Col xs={12} ><img src={sc4} class="screenshotGIF" alt="screenshot gif"/></Col>
+<Col xs={12} ><p> &emsp; An application that can be used to write and save notes involving an express.js backend which saves and retrieves note data from a JSON file
 Writing this code required a fundamental knowledge of Node.js, the file system module, and Express.js</p>
+    </Col>
           <ul>
             <li> <a href="https://github.com/AndiS90/Note-Taker" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
             <li> <a href="https://shielded-shelf-65590.herokuapp.com/" target="_blank" rel="noreferrer">Live Page</a> </li>
@@ -167,10 +175,10 @@ Writing this code required a fundamental knowledge of Node.js, the file system m
  
 </Modal.Header>
 <Modal.Body>
-
-<img src={sc5} class="screenshotGIF" alt="screenshot gif"/>
-<p>A simple day planner that presents the current date with a functioning clock. Each hour long block is color coded depending on the present hour. 
-  User's events are stored in local storage, while Moment.js is used for presenting time.</p>
+<Col xs={12} >
+<img src={sc5} class="screenshotGIF" alt="screenshot gif"/></Col>
+<Col xs={12} ><p> &emsp; A simple day planner that presents the current date with a functioning clock. Each hour long block is color coded depending on the present hour. 
+  User's events are stored in local storage, while Moment.js is used for presenting time.</p></Col>
           <ul>
             <li> <a href="https://github.com/AndiS90/Work-Day-Scheduler" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
             <li> <a href="https://andis90.github.io/Work-Day-Scheduler/" target="_blank" rel="noreferrer">Live Page</a> </li>
@@ -189,7 +197,8 @@ Writing this code required a fundamental knowledge of Node.js, the file system m
 <Modal.Body>
 
 {/* <img src={} class="screenshotGIF" alt="screenshot gif"/> */}
-<p>Creates README file based off user input through command line. This code required a core understanding of Node.js, the file system module, and the Inquirer Package.</p>
+<Col xs={12} ><p> &emsp; Creates README file based off user input through command line. This code required a core understanding of Node.js, the file system module, and the Inquirer Package.</p>
+          </Col>
           <ul>
             <li> <a href="https://github.com/AndiS90/README-Generator" target="_blank" rel="noreferrer">GitHub Repository</a> </li>
             <li> <a href="https://www.youtube.com/watch?v=OIHmMYze404" target="_blank" rel="noreferrer">Tutorial Video</a> </li>
