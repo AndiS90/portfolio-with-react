@@ -35,7 +35,7 @@
 
 Navigate the links at the top of the portfolio page to discover more.
 
-![generated html screenshot](../src/assets/images/screenshot.png) 
+![generated html screenshot](./src/components/pages/assets/images/portfolio-screenshot.gif) 
   
   <br>  
   
